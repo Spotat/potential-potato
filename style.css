@@ -91,14 +91,23 @@ a:hover {
 .bio_container {
   max-width: 1200px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  gap: 1rem;
   background-color: var(--color-primary);
   border: 0.5px solid var(--color-tertiary);
+  padding: 1em;
   box-shadow:
     rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.bio_detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
 }
 .bio_detail > h2 {
   font-size: var(--font-size-heading);
