@@ -36,6 +36,9 @@ header {
   max-width: 1200px;
   position: sticky;
   border-radius: 1rem;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .logo {
   font-size: 18px;
