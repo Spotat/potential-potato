@@ -78,15 +78,10 @@ a:hover::after {
   background: var(--color-quaternary);
 }
 
-.bio {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .bio_container {
   max-width: 1200px;
   display: flex;
+  margin: 100px auto;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -124,8 +119,6 @@ a:hover::after {
   letter-spacing: var(1.2 * var(--font-size-body));
 }
 .bio_detail > img {
-  min-width: 250px;
-  min-height: 250px;
   width: 100%;
   height: 100%;
   object-fit: cover;
