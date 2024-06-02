@@ -63,12 +63,68 @@ a {
   color: inherit;
   text-decoration: none;
   transition: all 0.3s ease;
+  position: relative;
+}
+a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-quaternary);
+  background: var(--color-quaternary);
 }
 a:hover {
   text-decoration: underline;
   color: var(--color-tertiary);
 }
 
+.bio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-quaternary);
+  height: 80vh;
+}
+.bio_container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: var(--color-primary);
+  border: 0.5px solid var(--color-tertiary);
+  box-shadow:
+    rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.bio_detail > h2 {
+  font-size: var(--font-size-heading);
+  line-height: var(--line-height-heading);
+  color: var(--color-tertiary);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.bio_detail > p {
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  color: var(--color-secondary);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: var(1.2 * var(--font-size-body));
+}
+.bio_detail > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 @media (max-width: 600px) {
   header {
     flex-direction: column;
