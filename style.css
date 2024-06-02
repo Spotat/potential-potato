@@ -26,7 +26,7 @@ body {
 }
 header {
   padding: 1rem;
-  background-color: transparent;
+  background-color: #f0f0ed8a;
   display: flex;
   backdrop-filter: blur(30px);
   justify-content: space-between;
