@@ -16,7 +16,6 @@
   padding: 0;
   box-sizing: border-box;
   line-height: calc(1.5 * var(--font-size-body));
-  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -62,7 +61,7 @@ a {
   font-style: normal;
   color: inherit;
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
   position: relative;
 }
 a::after {
@@ -84,8 +83,6 @@ a:hover::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-quaternary);
-  height: 80vh;
 }
 .bio_container {
   max-width: 1200px;
@@ -94,7 +91,7 @@ a:hover::after {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  background-color: var(--color-primary);
+  background-color: var(--color-quaternary);
   padding: 1em;
   box-shadow:
     rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -105,7 +102,7 @@ a:hover::after {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1em;
+  padding: 5em;
 }
 .bio_detail > h2 {
   font-size: var(--font-size-heading);
